@@ -1,45 +1,268 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> personal portofoilo</title>
-    <link rel="stylesheet" href=" style.css">
-</head>
-<body>
-   <div id="header">
 
-   <div class ="container">
-   <nav> 
-    <ul>
-        <li> <a href="#">Home</a></li>
-        <li> <a href="#">about</a></li>
-        <li> <a href="#">service</a></li>
-        <li> <a href="#">Home</a></li>
-    </ul>
-</nav>
-<div class="header-text">
-    <p>UI/UX  designer</p>
-    <h1>hi me is me</h1>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>personal website</title>
+    <link rel="stylesheet" href="CSS/style.css" />
 
-</div>
-</div>
-   </div>
-<div id= "about">
-    <div class= "container">
-        <div class= "row">
-            <div class= "about-col-1">
-            <img src="images/pexels-pixabay-36717.jpg">
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/fontawesome.min.css" />
+    <script
+      src="https://kit.fontawesome.com/511cf0c311.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header section -->
+    <header id="home">
+      <div class="container">
+        <nav>
+          <ul id="sidemenu">
+            <li><a href="#home" class="tra">Home</a></li>
+            <li><a href="#about" class="tra">About</a></li>
+            <li><a href="#services" class="tra">Services</a></li>
+            <li><a href="#portfolio" class="tra">Portfolio</a></li>
+            <li><a href="#contact" class="tra">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text" id="home">
+          <p>Software Engineering student</p>
+        
+          <h1>
+            Hi, I'am <span>mihret</span><br />
+            from astu
+          </h1>
         </div>
-            <div class= "about-col-2">
-                <h1 class="sub-title"> About me</h1>
-                <p> qwezrxctyvbuhnjk<br>mlkjaZSxcvbhnjkl<br>axecrvbhnjmkzwxe\crvgbhnjmk,azsxdcfvgbhnj<br>mkqawsedrftgyhujazsxdcfvgbhnjmwerftgyhuji</p>
-   <divclasss="tab-titles">
-    <p class="tab-links">skills</p>
-   </div> </div>
+      </div>
+    </header>
+    <!-- header complated -->
+
+    <!-- about section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src= images\photo_2024-06-04_12-42-50.jpg>
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>hey i am mihret 3rd year software student at astu . i am  working  on developing my frontend development skill.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+      
+                <li><span>Web Development</span><br />developing websites <br>
+                  
+              
+                <li>
+                  <span>languges</span><br />data stracture and algorithm <br>
+                  <i class="fa-brands fa-square-js"></i> | <i class="fa-brands fa-python"></i> | C++ |
+                </li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023 - current</span><br />learning and developing
+                  Web/App
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021 - current</span><br />3th year software-engineering student
+                  at ASTU
+                </li>
+                <li>
+                  <span>currently</span><br />learning at ALX
+                </li>
+                <li>
+                  <span> currently</span><br />learning online at shecodes
+                
+                </li>
+                <li>
+                  <span>2022 - current</span><br />learning managment at arsi unversity
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
+    <!-- end of about section -->
+    <!-- services -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Crafting captivating web experiences with a strategic blend of UI/UX design. 
+              We specialize in creating intuitive interfaces that elevate user engagement and drive results. 
+              Let's collaborate to bring your vision to life!
+            </p>
+          </div>
+          <div>
+            <i class="fa-brands 
+            
+            fa-mobileapp"></i>
+            <h2>mobile app</h2>
+            <p>
+            since the generation we living on is all about digital  world,and the easiest and the quick one is mobile,making mobile simplie for use by simplifiyng the app is my target'
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
-</body>
+    <!-- end of services -->
+    <!-- portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/web.jpg" />
+            <div class="layer">
+              <h3>mobile app</h3>
+              <p>
+                a mobile app used for chat.it have many versions like adding profile pictures login,signin.
+              </p>
+              <a href="file\ShareIO"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/graphics.JPG" />
+            <div class="layer">
+              <h3>student cafe system</h3>
+              <p>
+                course project ,in a simple way showing the student cafe system using java
+              </p>
+              <a href="file\javaCafeteriaManagement"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        
+   
+              <!-- end of portfolio -->
+    <!-- contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <a href="https://mail.google.com/"
+                ><i class="fa-solid fa-envelope fa-bounce"></i
+              ></a>
+              mihretlealem839@gmail.com
+            </p>
+            <p>
+              <i class="fa-solid fa-square-phone fa-bounce"></i> 0974140573
+            </p>
+            <div class="social-icons">
+              <a href="@mitu1222"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+              <a href="https://github.com/Mihret1221"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="file/MihretResume - Copy.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                type="Message"
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>Copyright &copy; mihret. personal website</p>
+      </footer>
+    </div>
+    <!-- end of contact -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyOijIit6dWuuN2QSeYEj1Td0BRQgyor-wAlIK6plVnuwLs9Kywx7Za4irtgV-O4FJ5/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+          })
+          .catch((error) => console.error("Error!", error.message));
+        setTimeout(function () {
+          msg.innerHTML = "";
+        }, 2500);
+        form.reset();
+      });
+    </script>
+  </body>
 </html>
